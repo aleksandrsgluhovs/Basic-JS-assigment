@@ -7,22 +7,24 @@
 }
 
 .header {
-    position: fixed;
-    width: 100% ;
+    margin-bottom: 50px;
     display: flex;
     justify-content: space-around;
+    &__time {
+        color: rgb(133, 134, 134);
+    }
     &__wrap {
         display: flex;
+        column-gap: 20px;
+        align-items: center;
     }
     &__date {
-        padding-top: 20px;
         font-size: 15px;
     }
     &__profile {
         align-items: center;
         text-align: center;
     }
-
     &__link {
         display: block;
         width: 100%;
@@ -47,10 +49,22 @@
 
 .main {
     margin-top: 50px;
-
-    &__time {
-        color: rgb(133, 134, 134);
-        padding-top: 50px;
+    &__input {
         
     }
+    &__btn:disabled:hover {
+        cursor: default;
+        opacity: 0.7;
+        background-color: rgb(128, 128, 128);
+    }
+    &__weather-forecast {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    &__weather {
+        border: solid red 10px;
+        display: flex;
+    }
+
 }

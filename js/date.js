@@ -2,7 +2,7 @@ export const date = document.querySelector('.header__date');
 export const todayDate = new Date().toLocaleDateString();;
 date.textContent = todayDate;
 
-export const time = document.querySelector('.main__time');
+export const time = document.querySelector('.header__time');
 
 function currentTime() {
     let date = new Date();

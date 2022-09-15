@@ -7,16 +7,20 @@
 }
 
 .header {
-  position: fixed;
-  width: 100%;
+  margin-bottom: 50px;
   display: flex;
   justify-content: space-around;
 }
+.header__time {
+  color: rgb(133, 134, 134);
+}
 .header__wrap {
   display: flex;
+  -moz-column-gap: 20px;
+       column-gap: 20px;
+  align-items: center;
 }
 .header__date {
-  padding-top: 20px;
   font-size: 15px;
 }
 .header__profile {
@@ -48,7 +52,17 @@
 .main {
   margin-top: 50px;
 }
-.main__time {
-  color: rgb(133, 134, 134);
-  padding-top: 50px;
+.main__btn:disabled:hover {
+  cursor: default;
+  opacity: 0.7;
+  background-color: rgb(128, 128, 128);
+}
+.main__weather-forecast {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.main__weather {
+  border: solid red 10px;
+  display: flex;
 }/*# sourceMappingURL=index.css.map */
